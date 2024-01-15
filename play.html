@@ -19,7 +19,7 @@
 <style>
   /* Add some transition effect for smooth animation */
   img {
-    transition: transform 0.5s;
+    transition: width 0.5s, height 0.5s;
   }
 </style>
 <script>
@@ -27,15 +27,15 @@
   var img = document.getElementById("myImage");
   // Define a function to enlarge the image
   function enlargeImage() {
-    // Scale the image by 50%
-    img.style.transform = "scale(1.5)";
+    // Increase the width and height by 50%
+    img.style.width = img.width * 1.5 + "px";
+    img.style.height = img.height * 1.5 + "px";
   }
   // Add a click event listener to the image
   img.addEventListener("click", enlargeImage);
 </script>
 <img id="myImage" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b0/Myosotis_scorpioides_-_Niitv%C3%A4lja_bog.jpg/819px-Myosotis_scorpioides_-_Niitv%C3%A4lja_bog.jpg" alt="Flower">
 
-  
 </body>
 </head>
 </html>
