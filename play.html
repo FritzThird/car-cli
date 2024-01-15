@@ -16,6 +16,25 @@
   setInterval(changeImage, 3000); // Call the changeImage function every 3 seconds
 </script>
 
+<style>
+  /* Add some transition effect for smooth animation */
+  img {
+    transition: transform 0.5s;
+  }
+</style>
+<script>
+  // Get the image element by its id
+  var img = document.getElementById("myImage");
+  // Define a function to enlarge the image
+  function enlargeImage() {
+    // Scale the image by 50%
+    img.style.transform = "scale(1.5)";
+  }
+  // Add a click event listener to the image
+  img.addEventListener("click", enlargeImage);
+</script>
+<img id="myImage" src="https://www.bing.com/th?id=OIP.0Yyq6aZ9w6f8X7j0z2l4RwHaE8&pid=Api&rs=1" alt="Cute cat">
+
   
 </body>
 </head>
